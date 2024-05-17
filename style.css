@@ -7,17 +7,27 @@
         }
 
         header {
-            background-color:rgba(0, 0, 0, 0)
-            color: rgba(255, 255, 255, 0.986);
+            background-color:rgba(255, 255, 255, 0.514)
             padding: 8px;
             position: relative; 
             z-index: 1; 
         }
 
         header h1 {
+          color: rgba(255, 255, 255, 0.986);
             margin: 0;
             font-size: 7px;
+            font-size: 24px; 
+            font-weight: bold
+    
         }
+        .trending {
+        color: rgba(255, 255, 255, 0.986);
+            margin: 0;
+            font-size: 7px;
+            font-size: 24px; 
+            font-weight: bold
+      }
 
         .navbar {
           margin-top: 10px;
@@ -56,79 +66,74 @@
             height: auto;
             z-index: -1;
             transform: translate(-50%, -50%);
-        }
-          .centered-text {
-            position:absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 200%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: rgb(255, 0, 0);
-            font-size: 24px;
-            text-align: center;
-            padding: 20px;
-      
+            opacity: 100%;
         }
 
-        .aboutext {
-
-           color: #fff;
-            margin: auto;
-            transform: translate(0,-5607%);
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            font-weight: bold
-      
-        }
-        p {
+        .hometext {
+          color: #fff;
+          margin: auto;
           font-size: 18px;
           line-height: 1.6;
-        }
-        .hometext {
-            color: #fff;
-            margin: auto;
-            transform: translate(0,660%);
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding-top: 20px;
-            padding-bottom: 20px;
-          }
+          text-align: left;
 
-          .tradetext {
-            color: rgb(255, 255, 255);
-            margin: auto;
-            font-size: 18px;
-            margin-top: -280px;
-            opacity: 0.5;
-          }         
-          .user-table {
-          left: 0;
-          width: 100%;
-          transform: translate(0,%);
-          height: 100%;
-          z-index: -1; 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          font-size: 24px;
-          text-align: center
-          
-          
-          
+          background-size: cover; 
+          position: fixed;
+          top: 
+          right: 0;
+          transform: translateY(1%);
+          padding: 20px; 
+          flex-basis: 22%; 
+ 
+          box-shadow: 0 0 100px rgba(255, 255, 255, 0.986);
+          margin: 10px;
+          padding: 10px;
+          text-align: center; 
+          background: transparent;
         }
-        .centeredabout-text {
-          position:absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, 50%);
-          background-color: rgba(0, 0, 0, 0.5);
-          color: rgb(255, 0, 0);
-          font-size: 14px;
-          text-align: center;
-          padding: 20px;
-          
+      .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.986);
+}
+
+.product {
+    flex-basis: 22%; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: center; 
+    background: transparent;
+}
+
+.product img {
+    width: auto; 
+    height: auto;
+    max-height: 200px; 
+}
+
+
+.product_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 20%;
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+      
